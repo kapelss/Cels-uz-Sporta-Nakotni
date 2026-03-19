@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* gradient background glow */
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(0,120,255,0.15), transparent 70%);
+  top: -200px;
+  left: -200px;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(140,0,255,0.12), transparent 70%);
+  bottom: -200px;
+  right: -200px;
+  z-index: -1;
+}
+
+
+/* NAVBAR */
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(10,10,10,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 1000;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #d1d1d1;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: white;
+}
+
+
+.glass-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 60px 40px;
+  backdrop-filter: blur(20px);
+  transition: 0.4s;
+}
+
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.15);
+}
+
+
+
+
+.glass-card.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.8s ease;
+}
+
+
+/* REVEAL ANIMĀCIJA */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(80px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.9s ease;
+}
+
+

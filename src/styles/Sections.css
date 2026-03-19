@@ -1,0 +1,19 @@
+section {
+  padding: 160px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-text {
+  text-align: center;
+  color: #9ca3af;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.7;
+}
