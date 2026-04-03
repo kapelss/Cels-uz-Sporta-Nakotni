@@ -1,3 +1,40 @@
+/* Hero background wrapper - stretches full width */
+#home {
+  position: relative;
+  max-width: 100% !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/hero_img.jpg');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  /* Slow Ken Burns zoom */
+  animation: heroZoom 14s ease-out forwards;
+}
+
+/* Dark gradient overlay so text stays readable */
+#home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to top, rgba(7,7,13,0.97) 0%, rgba(7,7,13,0.55) 50%, rgba(7,7,13,0.4) 100%),
+    linear-gradient(to right, rgba(7,7,13,0.4) 0%, transparent 60%);
+  z-index: 1;
+}
+
+@keyframes heroZoom {
+  from { transform: scale(1.06); }
+  to   { transform: scale(1);    }
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -7,6 +44,7 @@
   max-width: 1200px;
   margin: auto;
   position: relative;
+  z-index: 2; /* sits above both pseudo-elements */
 }
 
 .hero-eyebrow {
@@ -59,7 +97,7 @@
 }
 
 .hero p {
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 17px;
   max-width: 480px;
   line-height: 1.7;
