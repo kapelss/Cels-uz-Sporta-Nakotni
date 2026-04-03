@@ -2,7 +2,10 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="nav-inner">
-        <h2 className="logo">Ceļš uz sporta nākotni</h2>
+        <div className="logo">
+          <span className="logo-dot" />
+          Ceļš uz sporta nākotni
+        </div>
 
         <div className="nav-links">
           <a href="#problem">Problēma</a>

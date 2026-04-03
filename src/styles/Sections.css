@@ -1,19 +1,115 @@
+/* Section layout */
 section {
-  padding: 160px 20px;
-  max-width: 1100px;
+  padding: 0 32px;
+  max-width: 1200px;
   margin: auto;
+  position: relative;
+  z-index: 1;
 }
 
-.section-title {
-  font-size: 42px;
-  text-align: center;
-  margin-bottom: 25px;
+section:first-of-type {
+  padding-top: 0;
 }
 
-.section-text {
-  text-align: center;
-  color: #9ca3af;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.7;
+/* Contact card */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.contact-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 32px;
+  transition: border-color 0.3s, background 0.3s;
+  text-decoration: none;
+  display: block;
+}
+
+.contact-item:hover {
+  border-color: rgba(61, 255, 160, 0.3);
+  background: var(--accent-dim);
+}
+
+.contact-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.contact-value {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
+/* Team pills */
+.team-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.team-tag {
+  padding: 8px 18px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  background: var(--surface);
+  transition: 0.2s;
+}
+
+.team-tag:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Section divider */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  max-width: 1200px;
+  margin: 0 32px;
+}
+
+/* Stats row */
+.stats-row {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  margin-top: 44px;
+  padding-top: 44px;
+  border-top: 1px solid var(--border);
+}
+
+.stat-item {}
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.stat-value span {
+  color: var(--accent);
+}
+
+.stat-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+  max-width: 160px;
+  line-height: 1.5;
 }
