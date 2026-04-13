@@ -14,11 +14,11 @@ function Problem() {
 
         <div className="stats-row">
           <div className="stat-item">
-            <div className="stat-value">6<span>h+</span></div>
+            <div className="stat-value">4<span>h+</span></div>
             <div className="stat-desc">vidēji pavadīts pie ekrāna dienā</div>
           </div>
           <div className="stat-item">
-            <div className="stat-value">40<span>%</span></div>
+            <div className="stat-value">49<span>%</span></div>
             <div className="stat-desc">jaunieši nav pietiekami fiziski aktīvi</div>
           </div>
           <div className="stat-item">
