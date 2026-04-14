@@ -11,13 +11,13 @@ function Contact() {
         </p>
 
         <div className="contact-grid">
-          <a href="mailto:example@gmail.com" className="contact-item">
+          <a href="mailto:celsuzsportanakotni@gmail.com" className="contact-item">
             <div className="contact-label">E-pasts</div>
-            <div className="contact-value">example@gmail.com</div>
+            <div className="contact-value">celsuzsportanakotni@gmail.com</div>
           </a>
-          <a href="https://instagram.com/example" className="contact-item" target="_blank" rel="noreferrer">
+          <a href="https://instagram.com/CelsUzSportaNakotni" className="contact-item" target="_blank" rel="noreferrer">
             <div className="contact-label">Instagram</div>
-            <div className="contact-value">@example</div>
+            <div className="contact-value">@CelsUzSportaNakotni</div>
           </a>
         </div>
       </div>
