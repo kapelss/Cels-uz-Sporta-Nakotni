@@ -18,7 +18,7 @@ function Problem() {
             <div className="stat-desc">vidēji pavadīts pie ekrāna dienā</div>
           </div>
           <div className="stat-item">
-            <div className="stat-value">70<span>%</span></div>
+            <div className="stat-value">48<span>%</span></div>
             <div className="stat-desc">jaunieši nav pietiekami fiziski aktīvi</div>
           </div>
           <div className="stat-item">
